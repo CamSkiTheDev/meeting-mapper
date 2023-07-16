@@ -1,0 +1,10 @@
+{
+  "name": "meeting-mapper",
+  "version": "1.0.0",
+  "workspaces": [
+    "api"
+  ],
+  "author": "Cameron Lucas",
+  "license": "MIT",
+  "private": true
+}
