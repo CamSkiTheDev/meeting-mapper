@@ -13,7 +13,9 @@ import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
 import { MeetingMapService } from './meetingmap.service';
 import { CreateMeetingMapDto } from './dtos/create-meetingmap.dto';
 import { UpdateMeetingMapDto } from './dtos/update-meetingmap.dto';
+import { ApiBearerAuth } from '@nestjs/swagger';
 
+@ApiBearerAuth()
 @Controller('meetingmap')
 export class MeetingmapController {
   constructor(private MeetingMapService: MeetingMapService) {}
